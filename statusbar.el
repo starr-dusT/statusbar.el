@@ -134,6 +134,7 @@ Position the statusbar in the bottom right over the minibuffer."
          (x-offset (plist-get info :x-pixel-offset))
          (x-pos (- parent-frame-width buf-width x-offset exwm-systemtray-offset))
          (y-pos -1))
+    (message "x:%s, y:%s" x-pos y-pos)
     (cons x-pos y-pos)))
 
 (defun statusbar--display (&rest txts)
